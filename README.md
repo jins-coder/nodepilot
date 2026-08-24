@@ -89,6 +89,9 @@ Production packages will be generated inside:
 powershell -ExecutionPolicy Bypass -File .\sign-installers.ps1
 ```
 
+### 📖 Full Publishing & Winget Guide
+For complete instructions on publishing to GitHub Releases and Microsoft Winget, see the [**Release & Winget Guide**](docs/RELEASE_AND_WINGET_GUIDE.md).
+
 ---
 
 ## 🏗️ Architecture
