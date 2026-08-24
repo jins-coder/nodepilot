@@ -5,7 +5,7 @@
 **A high-performance, modern desktop GUI for managing Node.js versions on Windows.**  
 *Powered by Tauri 2, React 18, TypeScript, Tailwind CSS, and Rust.*
 
-[![Version](https://img.shields.io/badge/version-1.0.1-6366f1.svg?style=flat-square)](https://github.com/jins-coder/nodepilot/releases/tag/v1.0.1)
+[![Version](https://img.shields.io/badge/version-1.0.2-6366f1.svg?style=flat-square)](https://github.com/jins-coder/nodepilot/releases/tag/v1.0.2)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg?style=flat-square)](https://github.com/jins-coder/nodepilot/blob/main/LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-blue.svg?style=flat-square)](https://github.com/jins-coder/nodepilot)
 [![Tauri 2](https://img.shields.io/badge/Tauri-2.0-orange.svg?style=flat-square)](https://tauri.app/)
@@ -40,8 +40,8 @@ winget install NodePilot
 
 ### Option 2: Download Direct Installers (GitHub Releases)
 Head over to the [**Releases Page**](https://github.com/jins-coder/nodepilot/releases/latest) to download:
-- **`NodePilot_1.0.1_x64-setup.exe`** — Standard Windows Setup Wizard (Signed NSIS Installer)
-- **`NodePilot_1.0.1_x64_en-US.msi`** — Enterprise Windows MSI Package
+- **`NodePilot_1.0.2_x64-setup.exe`** — Standard Windows Setup Wizard (Signed NSIS Installer)
+- **`NodePilot_1.0.2_x64_en-US.msi`** — Enterprise Windows MSI Package
 - **`nodepilot.exe`** — Standalone Portable Binary (No installation required)
 
 ---

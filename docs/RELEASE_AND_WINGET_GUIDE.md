@@ -6,25 +6,25 @@ This guide explains how to attach download installers to **GitHub Releases** and
 
 ## 📌 Part 1: GitHub Release Setup (Upload Installers)
 
-Because you have already pushed the tag `v1.0.1`, follow these steps to make the installers downloadable to everyone:
+Because you have already pushed the tag `v1.0.2`, follow these steps to make the installers downloadable to everyone:
 
 ### Step 1: Open the GitHub Release Page
-👉 Go to: **[https://github.com/jins-coder/nodepilot/releases/tag/v1.0.1](https://github.com/jins-coder/nodepilot/releases/tag/v1.0.1)**
+👉 Go to: **[https://github.com/jins-coder/nodepilot/releases/tag/v1.0.2](https://github.com/jins-coder/nodepilot/releases/tag/v1.0.2)**
 
 ### Step 2: Edit the Release
 - Click the **"Edit Release"** or **"Draft a new release"** button on the top-right.
-- Title the release: `NodePilot v1.0.1`
+- Title the release: `NodePilot v1.0.2`
 
 ### Step 3: Attach the Built Installers
 Drag and drop these files from your computer into the **"Attach binaries by dropping them here"** section:
 
 1. **NSIS Setup Wizard (`.exe`)**:
    ```
-   E:\Envision\nvmgui\src-tauri\target\release\bundle\nsis\NodePilot_1.0.1_x64-setup.exe
+   E:\Envision\nvmgui\src-tauri\target\release\bundle\nsis\NodePilot_1.0.2_x64-setup.exe
    ```
 2. **MSI Enterprise Package (`.msi`)**:
    ```
-   E:\Envision\nvmgui\src-tauri\target\release\bundle\msi\NodePilot_1.0.1_x64_en-US.msi
+   E:\Envision\nvmgui\src-tauri\target\release\bundle\msi\NodePilot_1.0.2_x64_en-US.msi
    ```
 
 ### Step 4: Click "Publish Release"
@@ -39,7 +39,7 @@ Publishing to `winget` allows any Windows user to install NodePilot by typing:
 winget install NodePilot
 ```
 
-The manifest files have already been prepared in your repo under `winget/manifests/j/jins-coder/NodePilot/1.0.1/`.
+The manifest files have already been prepared in your repo under `winget/manifests/j/jins-coder/NodePilot/1.0.2/`.
 
 ### Step 1: Install `wingetcreate`
 Run PowerShell as Administrator:
@@ -58,7 +58,7 @@ winget install Microsoft.WingetCreate
 ### Step 3: Submit the Manifest to Microsoft
 In your PowerShell inside `e:\Envision\nvmgui`, run:
 ```powershell
-wingetcreate submit winget\manifests\j\jins-coder\NodePilot\1.0.1 --token YOUR_GITHUB_TOKEN
+wingetcreate submit winget\manifests\j\jins-coder\NodePilot\1.0.2 --token YOUR_GITHUB_TOKEN
 ```
 
 ### What Happens Next?
