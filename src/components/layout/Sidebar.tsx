@@ -37,7 +37,7 @@ export function Sidebar() {
               NodePilot
             </div>
             <div className="text-[10px] font-mono font-medium text-slate-500 dark:text-slate-400">
-              Desktop v1.0.0
+              Desktop v1.0.1
             </div>
           </div>
         </div>
