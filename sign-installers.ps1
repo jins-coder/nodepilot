@@ -5,8 +5,8 @@ param (
     [string]$CertPassword = ""
 )
 
-$exePath = "E:\Envision\nvmgui\src-tauri\target\release\bundle\nsis\NodePilot_1.0.0_x64-setup.exe"
-$msiPath = "E:\Envision\nvmgui\src-tauri\target\release\bundle\msi\NodePilot_1.0.0_x64_en-US.msi"
+$exePath = Get-ChildItem -Path "E:\Envision\nvmgui\src-tauri\target\release\bundle\nsis\*.exe" | Select-Object -First 1 -ExpandProperty FullName
+$msiPath = Get-ChildItem -Path "E:\Envision\nvmgui\src-tauri\target\release\bundle\msi\*.msi" | Select-Object -First 1 -ExpandProperty FullName
 $portableExe = "E:\Envision\nvmgui\src-tauri\target\release\nodepilot.exe"
 
 Write-Host "==========================================" -ForegroundColor Cyan

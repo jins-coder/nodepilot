@@ -1,6 +1,6 @@
 [package]
 name = "nodepilot"
-version = "1.0.0"
+version = "1.0.1"
 description = "NodePilot — Modern Node.js Version Manager"
 authors = ["NodePilot"]
 edition = "2021"

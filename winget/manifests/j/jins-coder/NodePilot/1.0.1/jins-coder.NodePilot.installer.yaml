@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.6.0.schema.json
+
+PackageIdentifier: jins-coder.NodePilot
+PackageVersion: 1.0.1
+InstallerLocale: en-US
+MinimumOSVersion: 10.0.0.0
+InstallerType: nullsoft
+Scope: user
+InstallModes:
+  - interactive
+  - silent
+UpgradeBehavior: install
+Commands:
+  - nodepilot
+Protocols:
+  - nodepilot
+FileExtensions:
+  - js
+  - mjs
+  - cjs
+  - ts
+Installers:
+  - Architecture: x64
+    InstallerType: nullsoft
+    InstallerUrl: https://github.com/jins-coder/nodepilot/releases/download/v1.0.1/NodePilot_1.0.1_x64-setup.exe
+    InstallerSha256: 00BF2148E14AFA45F32C36026CCA7E6EBCFEEA6EA44BCC63E4326C4E38A5B76C
+    ProductCode: NodePilot
+  - Architecture: x64
+    InstallerType: wix
+    InstallerUrl: https://github.com/jins-coder/nodepilot/releases/download/v1.0.1/NodePilot_1.0.1_x64_en-US.msi
+    InstallerSha256: 84037F37073448FA72D9FF247B705B988ECED2487C6B2FCB3C89F4D6F9326DFB
+ManifestType: installer
+ManifestVersion: 1.6.0
