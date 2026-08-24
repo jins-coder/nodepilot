@@ -23,11 +23,11 @@ Installers:
   - Architecture: x64
     InstallerType: nullsoft
     InstallerUrl: https://github.com/jins-coder/nodepilot/releases/download/v1.0.1/NodePilot_1.0.1_x64-setup.exe
-    InstallerSha256: 00BF2148E14AFA45F32C36026CCA7E6EBCFEEA6EA44BCC63E4326C4E38A5B76C
+    InstallerSha256: E6643472EB3316AA5E7BEF706E376856549458A5DE3BB0F0126F7DBF84E3AF1D
     ProductCode: NodePilot
   - Architecture: x64
     InstallerType: wix
     InstallerUrl: https://github.com/jins-coder/nodepilot/releases/download/v1.0.1/NodePilot_1.0.1_x64_en-US.msi
-    InstallerSha256: 84037F37073448FA72D9FF247B705B988ECED2487C6B2FCB3C89F4D6F9326DFB
+    InstallerSha256: 06C97206D16FB53D4B55B6212CDAF164862FBEB34222A7264951479A4E50848B
 ManifestType: installer
 ManifestVersion: 1.6.0
