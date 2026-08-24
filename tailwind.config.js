@@ -1,0 +1,110 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        bg: {
+          base: "var(--bg-base)",
+          primary: "var(--bg-base)",
+          surface: "var(--bg-surface)",
+          secondary: "var(--bg-surface)",
+          card: "var(--bg-card)",
+          tertiary: "var(--bg-tertiary)",
+          elevated: "var(--bg-elevated)",
+          hover: "var(--bg-hover)",
+          active: "var(--bg-active)",
+          border: "var(--border-color)",
+          "border-light": "var(--border-strong)",
+          "border-subtle": "var(--border-subtle)",
+          "border-strong": "var(--border-strong)",
+        },
+        brand: {
+          50: "#eef2ff",
+          100: "#e0e7ff",
+          200: "#c7d2fe",
+          300: "#a5b4fc",
+          400: "#818cf8",
+          500: "#6366f1",
+          600: "#4f46e5",
+          700: "#4338ca",
+          800: "#3730a3",
+          900: "#312e81",
+          glow: "rgba(99, 102, 241, 0.35)",
+        },
+        accent: {
+          DEFAULT: "#6366f1",
+          dim: "#4f46e5",
+          bright: "#818cf8",
+          subtle: "var(--accent-subtle)",
+          glow: "rgba(99, 102, 241, 0.25)",
+        },
+        text: {
+          primary: "var(--text-heading)",
+          heading: "var(--text-heading)",
+          body: "var(--text-body)",
+          secondary: "var(--text-body)",
+          tertiary: "var(--text-muted)",
+          muted: "var(--text-muted)",
+          faint: "var(--text-faint)",
+          accent: "#818cf8",
+        },
+      },
+      fontFamily: {
+        sans: [
+          "Plus Jakarta Sans",
+          "Inter",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "system-ui",
+          "sans-serif",
+        ],
+        mono: [
+          "JetBrains Mono",
+          "Cascadia Code",
+          "Fira Code",
+          "Consolas",
+          "monospace",
+        ],
+      },
+      fontSize: {
+        "3xs": ["0.625rem", { lineHeight: "0.875rem" }],
+        "2xs": ["0.6875rem", { lineHeight: "1rem" }],
+      },
+      boxShadow: {
+        glow: "0 0 20px -5px var(--glow-color, rgba(99, 102, 241, 0.35))",
+        "glow-lg": "0 0 40px -10px var(--glow-color, rgba(99, 102, 241, 0.4))",
+        glass: "0 8px 32px 0 rgba(0, 0, 0, 0.36)",
+        card: "0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 4px 12px 0 rgba(0, 0, 0, 0.05)",
+        "card-hover": "0 12px 28px -4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(99, 102, 241, 0.3)",
+        modal: "0 24px 64px -12px rgba(0, 0, 0, 0.4), 0 0 0 1px var(--border-color)",
+      },
+      animation: {
+        "pulse-subtle": "pulseSubtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "fade-in": "fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
+        "slide-up": "slideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
+        "scale-in": "scaleIn 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
+      },
+      keyframes: {
+        pulseSubtle: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.6" },
+        },
+        fadeIn: {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+        slideUp: {
+          from: { opacity: "0", transform: "translateY(12px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
+        scaleIn: {
+          from: { opacity: "0", transform: "scale(0.96)" },
+          to: { opacity: "1", transform: "scale(1)" },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
