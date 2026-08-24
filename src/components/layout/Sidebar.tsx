@@ -11,6 +11,7 @@ import {
   Cpu,
 } from "lucide-react";
 import { useNvmStore } from "@/stores";
+import packageJson from "../../../package.json";
 
 const navItems = [
   { to: "/", icon: LayoutDashboard, label: "Dashboard", badge: null },
@@ -37,7 +38,7 @@ export function Sidebar() {
               NodePilot
             </div>
             <div className="text-[10px] font-mono font-medium text-slate-500 dark:text-slate-400">
-              Desktop v1.0.1
+              Desktop v{packageJson.version}
             </div>
           </div>
         </div>
